@@ -141,6 +141,33 @@ body {
     position: relative;
 }
 
+/* LANGUAGE TOGGLE */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(74, 144, 226, 0.1);
+    border: 1px solid #4a90e2;
+    border-radius: 25px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a90e2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.language-toggle:hover {
+    background: rgba(74, 144, 226, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;

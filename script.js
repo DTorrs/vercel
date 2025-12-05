@@ -238,3 +238,78 @@ document.querySelectorAll('.project-link').forEach(link => {
         }, 600);
     });
 });
+
+// Language Toggle Functionality
+let currentLanguage = 'es';
+
+const translations = {
+    es: {
+        'Información Personal': 'Información Personal',
+        'Stack Tecnológico': 'Stack Tecnológico',
+        'Experiencia Laboral': 'Experiencia Laboral',
+        'Desarrollador Full Stack • Madrid, España': 'Desarrollador Full Stack • Madrid, España',
+        'Sistema web e-commerce completo con traductor automático, sistema multimoneda que detecta IP del usuario para mostrar precios en moneda local, módulo de administración para gestión de marcas, productos, categorías, usuarios y órdenes. Integración con servicio de correos Zoho, pasarela de pagos PayPal e implementación de chatbot con inteligencia artificial.': 'Sistema web e-commerce completo con traductor automático, sistema multimoneda que detecta IP del usuario para mostrar precios en moneda local, módulo de administración para gestión de marcas, productos, categorías, usuarios y órdenes. Integración con servicio de correos Zoho, pasarela de pagos PayPal e implementación de chatbot con inteligencia artificial.',
+        'Sitio Web': 'Sitio Web',
+        'Demo': 'Demo',
+        'Desarrollador Full Stack • Medellín, Colombia': 'Desarrollador Full Stack • Medellín, Colombia',
+        'Landing page corporativa con sistema de gestión de productos por categorías, carrito de compras, formulario de contacto con validaciones, integración con WhatsApp Business y optimización completa para dispositivos móviles.': 'Landing page corporativa con sistema de gestión de productos por categorías, carrito de compras, formulario de contacto con validaciones, integración con WhatsApp Business y optimización completa para dispositivos móviles.'
+    },
+    en: {
+        'Información Personal': 'Personal Information',
+        'Stack Tecnológico': 'Technology Stack',
+        'Experiencia Laboral': 'Work Experience',
+        'Desarrollador Full Stack • Madrid, España': 'Full Stack Developer • Madrid, Spain',
+        'Sistema web e-commerce completo con traductor automático, sistema multimoneda que detecta IP del usuario para mostrar precios en moneda local, módulo de administración para gestión de marcas, productos, categorías, usuarios y órdenes. Integración con servicio de correos Zoho, pasarela de pagos PayPal e implementación de chatbot con inteligencia artificial.': 'Complete e-commerce web system with automatic translator, multi-currency system that detects user IP to show prices in local currency, administration module for managing brands, products, categories, users and orders. Integration with Zoho mail service, PayPal payment gateway and AI chatbot implementation.',
+        'Sitio Web': 'Website',
+        'Demo': 'Demo',
+        'Desarrollador Full Stack • Medellín, Colombia': 'Full Stack Developer • Medellín, Colombia',
+        'Landing page corporativa con sistema de gestión de productos por categorías, carrito de compras, formulario de contacto con validaciones, integración con WhatsApp Business y optimización completa para dispositivos móviles.': 'Corporate landing page with product management system by categories, shopping cart, contact form with validations, WhatsApp Business integration and complete optimization for mobile devices.'
+    }
+};
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+    
+    // Update language indicator
+    document.getElementById('currentLang').textContent = currentLanguage.toUpperCase();
+    
+    // Update elements with data attributes
+    document.querySelectorAll('[data-es][data-en]').forEach(element => {
+        // Special handling for phone and email fields
+        if (element.querySelector('strong')) {
+            const strongElement = element.querySelector('strong');
+            if (currentLanguage === 'es') {
+                strongElement.textContent = element.getAttribute('data-es');
+            } else {
+                strongElement.textContent = element.getAttribute('data-en');
+            }
+        } else {
+            // Regular handling for other elements
+            if (currentLanguage === 'es') {
+                element.innerHTML = element.getAttribute('data-es');
+            } else {
+                element.innerHTML = element.getAttribute('data-en');
+            }
+        }
+    });
+    
+    // Update other text elements
+    Object.keys(translations[currentLanguage]).forEach(key => {
+        document.querySelectorAll('*').forEach(element => {
+            if (element.children.length === 0 && element.textContent.trim() === key) {
+                element.textContent = translations[currentLanguage][key];
+            }
+        });
+    });
+    
+    // Restart typewriter animation for title
+    const titleElement = document.querySelector('.typewriter');
+    if (titleElement) {
+        titleElement.style.animation = 'none';
+        titleElement.offsetHeight; // Trigger reflow
+        titleElement.style.animation = 'typewriter 3s steps(30, end), blink-caret 0.75s step-end 6 3s, remove-caret 0s 7.5s forwards';
+    }
+}
+
+// Add event listener to language toggle button
+document.getElementById('languageToggle').addEventListener('click', toggleLanguage);

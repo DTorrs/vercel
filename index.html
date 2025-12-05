@@ -19,10 +19,16 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
+            <!-- Language Toggle Button -->
+            <div class="language-toggle" id="languageToggle">
+                <i class="fas fa-globe"></i>
+                <span id="currentLang">ES</span>
+            </div>
+            
             <img src="foto.jpg" alt="Diego José Torres Rangel" class="profile-photo hover-glow">
             <h1 class="name">Diego José Torres Rangel</h1>
-            <h2 class="title typewriter">Desarrollador Full Stack Freelance</h2>
-            <p class="education-info">Ingeniería de Sistemas - Universidad Pontificia Bolivariana (UPB)<br><small>Materias finalizadas - Pendiente de prácticas</small></p>
+            <h2 class="title typewriter" data-es="Desarrollador Full Stack Freelance" data-en="Full Stack Freelance Developer">Desarrollador Full Stack Freelance</h2>
+            <p class="education-info" data-es="Ingeniería de Sistemas - Universidad Pontificia Bolivariana (UPB)<br><small>Materias finalizadas - Pendiente de prácticas</small>" data-en="Systems Engineering - Universidad Pontificia Bolivariana (UPB)<br><small>Courses completed - Pending internship</small>">Ingeniería de Sistemas - Universidad Pontificia Bolivariana (UPB)<br><small>Materias finalizadas - Pendiente de prácticas</small></p>
         </header>
 
         <!-- Grid principal -->
@@ -31,20 +37,20 @@
             <div class="left-column">
                 <!-- Información personal -->
                 <section class="section">
-                    <h3 class="section-title floating"><i class="fas fa-user"></i> Información Personal</h3>
+                    <h3 class="section-title floating" data-es="Información Personal" data-en="Personal Information"><i class="fas fa-user"></i> Información Personal</h3>
                     <div class="info-item hover-glow">
                         <i class="fas fa-phone"></i>
-                        <span><strong>Teléfono:</strong> <span style="display: inline-block; width: 20px; height: 12px; background: linear-gradient(to bottom, #FCDC00 0%, #FCDC00 50%, #034694 50%, #034694 75%, #CE1126 75%); border: 1px solid #ccc; margin-right: 8px; vertical-align: middle;"></span>+57 3184326655</span>
+                        <span data-es="Teléfono:" data-en="Phone:"><strong>Teléfono:</strong> <span style="display: inline-block; width: 20px; height: 12px; background: linear-gradient(to bottom, #FCDC00 0%, #FCDC00 50%, #034694 50%, #034694 75%, #CE1126 75%); border: 1px solid #ccc; margin-right: 8px; vertical-align: middle;"></span>+57 3184326655</span>
                     </div>
                     <div class="info-item hover-glow">
                         <i class="fas fa-envelope"></i>
-                        <span><strong>Email:</strong> djtorrs8@gmail.com</span>
+                        <span data-es="Email:" data-en="Email:"><strong>Email:</strong> djtorrs8@gmail.com</span>
                     </div>
                 </section>
 
                 <!-- Stack Tecnológico -->
                 <section class="section">
-                    <h3 class="section-title floating"><i class="fas fa-code"></i> Stack Tecnológico</h3>
+                    <h3 class="section-title floating" data-es="Stack Tecnológico" data-en="Technology Stack"><i class="fas fa-code"></i> Stack Tecnológico</h3>
                     <div class="tech-grid">
                         <div class="tech-item hover-glow">
                             <i class="fas fa-mobile-alt"></i>
@@ -78,19 +84,19 @@
             <div class="right-column">
                 <!-- Experiencia laboral -->
                 <section class="section">
-                    <h3 class="section-title floating"><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
+                    <h3 class="section-title floating" data-es="Experiencia Laboral" data-en="Work Experience"><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
 
                     <!-- PALI BUILDS -->
                     <div class="experience-item hover-glow">
                         <h4 class="company">PALI BUILDS</h4>
-                        <p class="position">Desarrollador Full Stack • Madrid, España</p>
-                        <p class="description">
+                        <p class="position" data-es="Desarrollador Full Stack • Madrid, España" data-en="Full Stack Developer • Madrid, Spain">Desarrollador Full Stack • Madrid, España</p>
+                        <p class="description" data-es="Sistema web e-commerce completo con traductor automático, sistema multimoneda que detecta IP del usuario para mostrar precios en moneda local, módulo de administración para gestión de marcas, productos, categorías, usuarios y órdenes. Integración con servicio de correos Zoho, pasarela de pagos PayPal e implementación de chatbot con inteligencia artificial." data-en="Complete e-commerce web system with automatic translator, multi-currency system that detects user IP to show prices in local currency, administration module for managing brands, products, categories, users and orders. Integration with Zoho mail service, PayPal payment gateway and AI chatbot implementation.">
                             Sistema web e-commerce completo con traductor automático, sistema multimoneda que detecta IP del usuario para mostrar precios en moneda local, módulo de administración para gestión de marcas, productos, categorías, usuarios y órdenes. Integración con servicio de correos Zoho, pasarela de pagos PayPal e implementación de chatbot con inteligencia artificial.
                         </p>
-                        <a href="http://www.palibuilds.es" class="project-link" target="_blank">
+                        <a href="http://www.palibuilds.es" class="project-link" target="_blank" data-es="Sitio Web" data-en="Website">
                             <i class="fas fa-globe"></i> Sitio Web
                         </a>
-                        <a href="https://www.youtube.com/watch?v=7FMKMnI2mTU" class="project-link" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=7FMKMnI2mTU" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
                             <i class="fab fa-youtube"></i> Demo
                         </a>
                     </div>
@@ -98,11 +104,11 @@
                     <!-- BEAUTYÉ CO. -->
                     <div class="experience-item hover-glow">
                         <h4 class="company">BEAUTYÉ CO.</h4>
-                        <p class="position">Desarrollador Full Stack • Sidney, Australia</p>
-                        <p class="description">
+                        <p class="position" data-es="Desarrollador Full Stack • Sidney, Australia" data-en="Full Stack Developer • Sidney, Australia">Desarrollador Full Stack • Sidney, Australia</p>
+                        <p class="description" data-es="Desarrollo de plataforma e-commerce especializada en skincare con funcionalidades avanzadas: sistema de traducción automática, detección de geolocalización para conversión de monedas, panel administrativo completo para gestión de productos y marcas, integración con Zoho Mail, procesamiento de pagos con PayPal y chatbot inteligente para atención al cliente." data-en="Development of e-commerce platform specialized in skincare with advanced functionalities: automatic translation system, geolocation detection for currency conversion, complete administrative panel for product and brand management, Zoho Mail integration, PayPal payment processing and intelligent chatbot for customer service.">
                             Desarrollo de plataforma e-commerce especializada en skincare con funcionalidades avanzadas: sistema de traducción automática, detección de geolocalización para conversión de monedas, panel administrativo completo para gestión de productos y marcas, integración con Zoho Mail, procesamiento de pagos con PayPal y chatbot inteligente para atención al cliente.
                         </p>
-                        <a href="http://www.beautyeglobalco.com" class="project-link" target="_blank">
+                        <a href="http://www.beautyeglobalco.com" class="project-link" target="_blank" data-es="Sitio Web" data-en="Website">
                             <i class="fas fa-globe"></i> Sitio Web
                         </a>
                     </div>
@@ -110,11 +116,11 @@
                     <!-- APP REPARACIONES -->
                     <div class="experience-item hover-glow">
                         <h4 class="company">APP REPARACIONES</h4>
-                        <p class="position">Desarrollador Full Stack • Ciudad de México, México</p>
-                        <p class="description">
+                        <p class="position" data-es="Desarrollador Full Stack • Ciudad de México, México" data-en="Full Stack Developer • Mexico City, Mexico">Desarrollador Full Stack • Ciudad de México, México</p>
+                        <p class="description" data-es="Aplicación móvil innovadora para empresa de reparación de electrodomésticos. Sistema de encriptación de datos y comunicación via Twilio/WhatsApp sin exposición de números telefónicos. Gestión automatizada de servicios, asignación de técnicos, seguimiento fotográfico, generación de presupuestos y sistema de pagos por rendimiento (60%-80%). Incluye módulo administrativo completo con reportes detallados y automatización de mensajes." data-en="Innovative mobile application for appliance repair company. Data encryption system and communication via Twilio/WhatsApp without phone number exposure. Automated service management, technician assignment, photographic tracking, budget generation and performance-based payment system (60%-80%). Includes complete administrative module with detailed reports and message automation.">
                             Aplicación móvil innovadora para empresa de reparación de electrodomésticos. Sistema de encriptación de datos y comunicación via Twilio/WhatsApp sin exposición de números telefónicos. Gestión automatizada de servicios, asignación de técnicos, seguimiento fotográfico, generación de presupuestos y sistema de pagos por rendimiento (60%-80%). Incluye módulo administrativo completo con reportes detallados y automatización de mensajes.
                         </p>
-                        <a href="https://www.youtube.com/watch?v=JdXTzbcqt74" class="project-link" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=JdXTzbcqt74" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
                             <i class="fab fa-youtube"></i> Demo
                         </a>
                     </div>
@@ -122,11 +128,11 @@
                     <!-- PROYECTO INTEGRADOR UPB -->
                     <div class="experience-item hover-glow">
                         <h4 class="company">PROYECTO INTEGRADOR UPB</h4>
-                        <p class="position">Desarrollador Full Stack • Bucaramanga, Santander</p>
-                        <p class="description">
+                        <p class="position" data-es="Desarrollador Full Stack • Bucaramanga, Santander" data-en="Full Stack Developer • Bucaramanga, Santander">Desarrollador Full Stack • Bucaramanga, Santander</p>
+                        <p class="description" data-es="Sistema integral de reportes y objetos perdidos para la Universidad Pontificia Bolivariana. Plataforma con geolocalización, subida de fotos, muro público interactivo, mapas dinámicos y sistema de priorización por votos. Módulo de objetos perdidos con sistema de contacto seguro y notificaciones automatizadas. Panel administrativo para directivos con métricas y control de estados desarrollado en Node.js, Flutter y MySQL." data-en="Comprehensive reports and lost objects system for Universidad Pontificia Bolivariana. Platform with geolocation, photo upload, interactive public wall, dynamic maps and vote-based prioritization system. Lost objects module with secure contact system and automated notifications. Administrative panel for executives with metrics and status control developed in Node.js, Flutter and MySQL.">
                             Sistema integral de reportes y objetos perdidos para la Universidad Pontificia Bolivariana. Plataforma con geolocalización, subida de fotos, muro público interactivo, mapas dinámicos y sistema de priorización por votos. Módulo de objetos perdidos con sistema de contacto seguro y notificaciones automatizadas. Panel administrativo para directivos con métricas y control de estados desarrollado en Node.js, Flutter y MySQL.
                         </p>
-                        <a href="https://www.youtube.com/watch?v=kwDvKTRsOYI" class="project-link" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=kwDvKTRsOYI" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
                             <i class="fab fa-youtube"></i> Demo
                         </a>
                     </div>
