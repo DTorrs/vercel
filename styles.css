@@ -208,6 +208,8 @@ body {
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    height: fit-content;
+    align-self: start;
 }
 
 .left-column:hover {
@@ -442,6 +444,26 @@ body {
         font-size: 2rem;
     }
     
+    .title {
+        font-size: 1.2rem;
+        white-space: normal !important;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .typewriter {
+        white-space: normal !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        animation: none !important;
+        border-right: none !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        text-align: center;
+    }
+    
     .container {
         padding: 10px;
     }
@@ -449,6 +471,23 @@ body {
     .tech-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 10px;
+    }
+    
+    .header {
+        padding: 20px 0;
+    }
+    
+    .education-info {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    
+    body {
+        cursor: auto !important;
+    }
+    
+    .cursor {
+        display: none !important;
     }
 }
 
@@ -466,10 +505,11 @@ body {
     overflow: hidden;
     border-right: 2px solid #4a90e2;
     white-space: nowrap;
-    animation: typewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typewriter 3s steps(30, end), blink-caret 0.75s step-end 6 3s, remove-caret 0s 7.5s forwards;
     width: fit-content;
     margin: 0 auto;
     text-align: center;
+    max-width: 100%;
 }
 
 @keyframes typewriter {
@@ -477,13 +517,17 @@ body {
         width: 0;
     }
     to { 
-        width: 480px;
+        width: 32ch;
     }
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: #4a90e2; }
+}
+
+@keyframes remove-caret {
+    to { border-right: none; }
 }
 
 .education-info {
