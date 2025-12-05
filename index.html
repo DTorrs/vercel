@@ -3,9 +3,529 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola</title>
+    <title>Diego José Torres Rangel - Freelancer Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola</h1>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-text">DT</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" data-nav="home">Inicio</a>
+            <a href="#about" data-nav="about">Sobre Mí</a>
+            <a href="#skills" data-nav="skills">Habilidades</a>
+            <a href="#projects" data-nav="projects">Proyectos</a>
+            <a href="#contact" data-nav="contact">Contacto</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="line">Hola, soy</span>
+                    <span class="line highlight">Diego Torres</span>
+                    <span class="line">Freelancer Full Stack</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollo soluciones web y móviles innovadoras que impulsan tu negocio</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <span>Contratar Servicios</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn-secondary">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/573184326655" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:djtorrs8@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="foto.jpg" alt="Diego Torres - Freelancer Developer" class="profile-img">
+                    <div class="image-bg"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="float-element" data-speed="2">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="float-element" data-speed="3">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="float-element" data-speed="1.5">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="float-element" data-speed="2.5">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Freelancer especializado en desarrollo Full Stack</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Tu Desarrollador Freelancer de Confianza</h3>
+                        <p>Soy un desarrollador Full Stack freelancer de 22 años con experiencia creando soluciones digitales innovadoras para clientes internacionales. Me especializo en desarrollar aplicaciones web y móviles que no solo se ven increíbles, sino que también resuelven problemas reales de negocio.</p>
+                        
+                        <p>Como freelancer, he trabajado con empresas desde Madrid hasta Sidney, creando sistemas de e-commerce multilingües, aplicaciones móviles complejas y plataformas web escalables. Mi enfoque está en entregar productos de alta calidad que superen las expectativas.</p>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Nombre:</span>
+                                <span class="info-value">Diego José Torres Rangel</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Edad:</span>
+                                <span class="info-value">22 años</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Ubicación:</span>
+                                <span class="info-value">Bucaramanga, Colombia</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Educación:</span>
+                                <span class="info-value">Ing. Sistemas - UPB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-preview">
+                        <h4>Servicios que Ofrezco:</h4>
+                        <div class="services-list">
+                            <div class="service-tag">Desarrollo Web</div>
+                            <div class="service-tag">Apps Móviles</div>
+                            <div class="service-tag">E-commerce</div>
+                            <div class="service-tag">APIs REST</div>
+                            <div class="service-tag">Bases de Datos</div>
+                            <div class="service-tag">Consultoría Tech</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Satisfacción</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-subtitle">Tecnologías y herramientas que domino como freelancer</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>TypeScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React/Vue</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>APIs REST</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Móvil & Base de Datos</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Flutter</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tech="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-icon" data-tech="Python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-icon" data-tech="Node.js">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-icon" data-tech="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon" data-tech="Flutter">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="tech-icon" data-tech="MySQL">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Casos de éxito desarrollados como freelancer</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://www.palibuilds.es" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=7FMKMnI2mTU" target="_blank" class="action-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=PALI+BUILDS" alt="Pali Builds E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce</div>
+                        <h3>Pali Builds - Plataforma E-commerce</h3>
+                        <p>Sistema web e-commerce completo con traductor automático, multimoneda basada en geolocalización IP, panel administrativo, integración con Zoho Mail, PayPal y chatbot con IA.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>PayPal API</span>
+                        </div>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Madrid, España</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://www.beautyeglobalco.com" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=BEAUTY+CO" alt="Beauty Global Co E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce</div>
+                        <h3>Beautyé Global Co - Skincare Platform</h3>
+                        <p>Plataforma e-commerce para productos de skincare con características avanzadas: sistema multiidioma, detección automática de moneda por geolocalización y chatbot inteligente.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>MySQL</span>
+                            <span>AI Chatbot</span>
+                        </div>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sidney, Australia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://www.youtube.com/watch?v=JdXTzbcqt74" target="_blank" class="action-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/400x250/ff6b6b/ffffff?text=APP+REPAIRS" alt="App Reparaciones">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Aplicación Móvil</div>
+                        <h3>App Reparaciones - Sistema Móvil</h3>
+                        <p>Aplicación móvil completa para empresa de reparaciones con sistema de encriptación, integración Twilio para WhatsApp, gestión de técnicos y sistema automatizado de pagos.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>Twilio API</span>
+                            <span>Encryption</span>
+                        </div>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciudad de México, México</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://www.youtube.com/watch?v=kwDvKTRsOYI" target="_blank" class="action-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/400x250/4ecdc4/ffffff?text=UPB+REPORTS" alt="Sistema UPB">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Sistema Web</div>
+                        <h3>Sistema de Reportes UPB</h3>
+                        <p>Plataforma web para la Universidad Pontificia Bolivariana que permite a estudiantes reportar problemas de infraestructura y gestionar objetos perdidos con mapa interactivo.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Flutter</span>
+                            <span>MySQL</span>
+                            <span>Maps API</span>
+                        </div>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bucaramanga, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contrata Mis Servicios</h2>
+                <p class="section-subtitle">¿Listo para llevar tu proyecto al siguiente nivel?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>¡Hablemos de tu proyecto!</h3>
+                        <p>Como freelancer, estoy disponible para trabajar en tu próximo proyecto. Ya sea una aplicación web, móvil o una solución personalizada, estoy aquí para ayudarte a convertir tu idea en realidad.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <a href="mailto:djtorrs8@gmail.com">djtorrs8@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">WhatsApp</span>
+                                <a href="https://wa.me/573184326655">+57 318 432 6655</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Ubicación</span>
+                                <span>Bucaramanga, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Disponible para nuevos proyectos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Tu Nombre</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Tu Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Tipo de Proyecto</option>
+                                <option value="web">Desarrollo Web</option>
+                                <option value="mobile">Aplicación Móvil</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="api">API Development</option>
+                                <option value="consultation">Consultoría</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required rows="5"></textarea>
+                            <label for="message">Cuéntame sobre tu proyecto</label>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Diego Torres - Freelancer Developer. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/573184326655" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:djtorrs8@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="progress-bar"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
