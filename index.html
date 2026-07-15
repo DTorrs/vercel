@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego José Torres Rangel - Desarrollador Full Stack</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Neural Network Background -->
+    <div class="neural-container" id="neural"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <!-- Language Toggle Button -->
+            <div class="language-toggle" id="languageToggle">
+                <i class="fas fa-globe"></i>
+                <span id="currentLang">ES</span>
+            </div>
+            
+            <img src="foto.jpg" alt="Diego José Torres Rangel" class="profile-photo hover-glow">
+            <h1 class="name">Diego José Torres Rangel</h1>
+            <h2 class="title typewriter" data-es="Ingeniero de Sistemas e Informática • Desarrollador Full Stack" data-en="Systems &amp; Computer Engineer • Full Stack Developer">Ingeniero de Sistemas e Informática • Desarrollador Full Stack</h2>
+            <p class="education-info" data-es="Ingeniería de Sistemas e Informática - Universidad Pontificia Bolivariana (UPB)<br><small>Título obtenido</small>" data-en="Systems &amp; Computer Engineering - Universidad Pontificia Bolivariana (UPB)<br><small>Degree obtained</small>">Ingeniería de Sistemas e Informática - Universidad Pontificia Bolivariana (UPB)<br><small>Título obtenido</small></p>
+        </header>
+
+        <!-- Grid principal -->
+        <div class="main-grid">
+            <!-- Columna izquierda -->
+            <div class="left-column">
+                <!-- Información personal -->
+                <section class="section">
+                    <h3 class="section-title floating" data-es="Información Personal" data-en="Personal Information"><i class="fas fa-user"></i> Información Personal</h3>
+                    <div class="info-item hover-glow">
+                        <i class="fas fa-phone"></i>
+                        <span data-es="Teléfono:" data-en="Phone:"><strong>Teléfono:</strong> <span style="display: inline-block; width: 20px; height: 12px; background: linear-gradient(to bottom, #FCDC00 0%, #FCDC00 50%, #034694 50%, #034694 75%, #CE1126 75%); border: 1px solid #ccc; margin-right: 8px; vertical-align: middle;"></span>+57 3184326655</span>
+                    </div>
+                    <div class="info-item hover-glow">
+                        <i class="fas fa-envelope"></i>
+                        <span data-es="Email:" data-en="Email:"><strong>Email:</strong> djtorrs8@gmail.com</span>
+                    </div>
+                    <div class="info-item hover-glow">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span data-es="Edad:" data-en="Age:"><strong>Edad:</strong> 22 años</span>
+                    </div>
+                    <div class="info-item hover-glow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-es="Ubicación:" data-en="Location:"><strong>Ubicación:</strong> Bucaramanga - Santander, Colombia</span>
+                    </div>
+                    <div class="info-item hover-glow">
+                        <i class="fab fa-github"></i>
+                        <span data-es="GitHub:" data-en="GitHub:"><strong>GitHub:</strong> <a href="https://github.com/DTorrs" target="_blank" style="color: inherit;">github.com/DTorrs</a></span>
+                    </div>
+                    <div class="info-item hover-glow">
+                        <i class="fas fa-globe"></i>
+                        <span data-es="Sitio Web:" data-en="Website:"><strong>Sitio Web:</strong> <a href="https://diegotorres.lat" target="_blank" style="color: inherit;">diegotorres.lat</a></span>
+                    </div>
+                </section>
+
+                <!-- Stack Tecnológico -->
+                <section class="section">
+                    <h3 class="section-title floating" data-es="Stack Tecnológico" data-en="Technology Stack"><i class="fas fa-code"></i> Stack Tecnológico</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item hover-glow">
+                            <i class="fas fa-code"></i>
+                            <span>.NET</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fab fa-js-square"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fas fa-database"></i>
+                            <span>Oracle</span>
+                        </div>
+                        <div class="tech-item hover-glow">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="right-column">
+                <!-- Experiencia laboral -->
+                <section class="section">
+                    <h3 class="section-title floating" data-es="Experiencia Laboral" data-en="Work Experience"><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
+
+                    <!-- CONTROL ONLINE INTERNATIONAL -->
+                    <div class="experience-item hover-glow">
+                        <h4 class="company">CONTROL ONLINE INTERNATIONAL</h4>
+                        <p class="position" data-es="Desarrollador Full Stack • Colombia • Enero 2026 - Actualmente" data-en="Full Stack Developer • Colombia • January 2026 - Present">Desarrollador Full Stack • Colombia • Enero 2026 - Actualmente</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Oracle</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <ul class="description-list" data-es="<li>Desarrollo Full Stack con <strong>.NET</strong> y <strong>React</strong>.</li><li>Desarrollo de <strong>APIs REST</strong>.</li><li>Implementación de <strong>BaseCRUD reutilizable</strong>.</li><li>Diseño y optimización de bases de datos en <strong>SQL Server</strong> y <strong>Oracle</strong>.</li><li>Creación de índices, triggers y consultas SQL optimizadas.</li><li>Integración de servicios backend.</li><li>Mantenimiento correctivo y evolutivo de aplicaciones.</li><li>Control de versiones con <strong>Git</strong>.</li>" data-en="<li>Full Stack development with <strong>.NET</strong> and <strong>React</strong>.</li><li><strong>REST API</strong> development.</li><li>Implementation of a <strong>reusable BaseCRUD</strong>.</li><li>Design and optimization of <strong>SQL Server</strong> and <strong>Oracle</strong> databases.</li><li>Creation of indexes, triggers and optimized SQL queries.</li><li>Backend service integration.</li><li>Corrective and evolutive application maintenance.</li><li>Version control with <strong>Git</strong>.</li>">
+                            <li>Desarrollo Full Stack con <strong>.NET</strong> y <strong>React</strong>.</li>
+                            <li>Desarrollo de <strong>APIs REST</strong>.</li>
+                            <li>Implementación de <strong>BaseCRUD reutilizable</strong>.</li>
+                            <li>Diseño y optimización de bases de datos en <strong>SQL Server</strong> y <strong>Oracle</strong>.</li>
+                            <li>Creación de índices, triggers y consultas SQL optimizadas.</li>
+                            <li>Integración de servicios backend.</li>
+                            <li>Mantenimiento correctivo y evolutivo de aplicaciones.</li>
+                            <li>Control de versiones con <strong>Git</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- BEAUTYÉ CO. -->
+                    <div class="experience-item hover-glow">
+                        <h4 class="company">BEAUTYÉ CO.</h4>
+                        <p class="position" data-es="Desarrollador Full Stack • Sidney, Australia" data-en="Full Stack Developer • Sidney, Australia">Desarrollador Full Stack • Sidney, Australia</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">Multimoneda</span>
+                            <span class="tech-tag">Zoho Mail</span>
+                            <span class="tech-tag">PayPal</span>
+                            <span class="tech-tag">Chatbot IA</span>
+                        </div>
+                        <ul class="description-list" data-es="<li>Sistema web de e-commerce.</li><li>Traductor multilenguaje integrado.</li><li>Detección de la IP del usuario para mostrar precios en su moneda local (<strong>multimoneda</strong>).</li><li>Módulo de administración para:<ul><li>Gestionar marcas.</li><li>Gestionar productos.</li><li>Gestionar categorías.</li><li>Gestionar usuarios.</li><li>Gestionar órdenes.</li></ul></li><li>Integración con el servicio de correo <strong>Zoho Mail</strong>.</li><li>Integración de la pasarela de pagos <strong>PayPal</strong>.</li><li>Implementación de un <strong>chatbot con inteligencia artificial</strong>.</li>" data-en="<li>E-commerce web system.</li><li>Integrated multilanguage translator.</li><li>User IP detection to show prices in local currency (<strong>multi-currency</strong>).</li><li>Administration module to:<ul><li>Manage brands.</li><li>Manage products.</li><li>Manage categories.</li><li>Manage users.</li><li>Manage orders.</li></ul></li><li>Integration with the <strong>Zoho Mail</strong> email service.</li><li>Integration of the <strong>PayPal</strong> payment gateway.</li><li>Implementation of an <strong>AI chatbot</strong>.</li>">
+                            <li>Sistema web de e-commerce.</li>
+                            <li>Traductor multilenguaje integrado.</li>
+                            <li>Detección de la IP del usuario para mostrar precios en su moneda local (<strong>multimoneda</strong>).</li>
+                            <li>Módulo de administración para:
+                                <ul>
+                                    <li>Gestionar marcas.</li>
+                                    <li>Gestionar productos.</li>
+                                    <li>Gestionar categorías.</li>
+                                    <li>Gestionar usuarios.</li>
+                                    <li>Gestionar órdenes.</li>
+                                </ul>
+                            </li>
+                            <li>Integración con el servicio de correo <strong>Zoho Mail</strong>.</li>
+                            <li>Integración de la pasarela de pagos <strong>PayPal</strong>.</li>
+                            <li>Implementación de un <strong>chatbot con inteligencia artificial</strong>.</li>
+                        </ul>
+                        <a href="http://www.beautyeglobalco.com" class="project-link" target="_blank" data-es="Sitio Web" data-en="Website">
+                            <i class="fas fa-globe"></i> Sitio Web
+                        </a>
+                    </div>
+
+                    <!-- PALI BUILDS -->
+                    <div class="experience-item hover-glow">
+                        <h4 class="company">PALI BUILDS</h4>
+                        <p class="position" data-es="Desarrollador Full Stack • Madrid, España" data-en="Full Stack Developer • Madrid, Spain">Desarrollador Full Stack • Madrid, España</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">Multimoneda</span>
+                            <span class="tech-tag">Traducción automática</span>
+                            <span class="tech-tag">PayPal</span>
+                            <span class="tech-tag">Zoho Mail</span>
+                        </div>
+                        <ul class="description-list" data-es="<li>Desarrollo de una plataforma de comercio electrónico para productos del sector obras.</li><li>Adaptación de la plataforma para clientes internacionales mediante <strong>traducción automática</strong> y <strong>soporte multimoneda</strong>.</li><li>Personalización del módulo administrativo según los procesos comerciales de la empresa.</li><li>Integración de <strong>PayPal</strong>, <strong>Zoho Mail</strong>.</li>" data-en="<li>Development of an e-commerce platform for construction sector products.</li><li>Platform adaptation for international clients through <strong>automatic translation</strong> and <strong>multi-currency support</strong>.</li><li>Customization of the administrative module according to the company's business processes.</li><li>Integration of <strong>PayPal</strong>, <strong>Zoho Mail</strong>.</li>">
+                            <li>Desarrollo de una plataforma de comercio electrónico para productos del sector obras.</li>
+                            <li>Adaptación de la plataforma para clientes internacionales mediante <strong>traducción automática</strong> y <strong>soporte multimoneda</strong>.</li>
+                            <li>Personalización del módulo administrativo según los procesos comerciales de la empresa.</li>
+                            <li>Integración de <strong>PayPal</strong>, <strong>Zoho Mail</strong>.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=7FMKMnI2mTU" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
+                            <i class="fab fa-youtube"></i> Demo
+                        </a>
+                    </div>
+
+                    <!-- APP REPARACIONES -->
+                    <div class="experience-item hover-glow">
+                        <h4 class="company">APP REPARACIONES</h4>
+                        <p class="position" data-es="Desarrollador Full Stack • Ciudad de México, México" data-en="Full Stack Developer • Mexico City, Mexico">Desarrollador Full Stack • Ciudad de México, México</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Twilio / WhatsApp API</span>
+                            <span class="tech-tag">Automatización de pagos</span>
+                        </div>
+                        <ul class="description-list" data-es="<li>Desarrollo de una aplicación móvil utilizando <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>MySQL</strong>.</li><li>Implementación de un sistema seguro de gestión de servicios para empresas de reparación de electrodomésticos.</li><li>Integración con <strong>Twilio</strong> para la comunicación por <strong>WhatsApp</strong> sin exponer los datos de clientes y técnicos.</li><li>Desarrollo de módulos para la gestión de servicios, asignación de técnicos, presupuestos y evidencias fotográficas.</li><li>Implementación de un <strong>sistema de cálculo automático de pagos</strong> según el rendimiento de los técnicos.</li><li>Desarrollo del panel administrativo para la gestión de técnicos, servicios, pagos, garantías y reportes.</li><li>Automatización de notificaciones y mensajes por <strong>WhatsApp</strong> para el seguimiento de servicios y recordatorios de pago.</li>" data-en="<li>Development of a mobile application using <strong>Flutter</strong>, <strong>Node.js</strong> and <strong>MySQL</strong>.</li><li>Implementation of a secure service management system for appliance repair companies.</li><li>Integration with <strong>Twilio</strong> for <strong>WhatsApp</strong> communication without exposing client and technician data.</li><li>Development of modules for service management, technician assignment, budgets and photographic evidence.</li><li>Implementation of an <strong>automatic payment calculation system</strong> based on technician performance.</li><li>Development of the administrative panel for managing technicians, services, payments, warranties and reports.</li><li>Automation of notifications and <strong>WhatsApp</strong> messages for service tracking and payment reminders.</li>">
+                            <li>Desarrollo de una aplicación móvil utilizando <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>MySQL</strong>.</li>
+                            <li>Implementación de un sistema seguro de gestión de servicios para empresas de reparación de electrodomésticos.</li>
+                            <li>Integración con <strong>Twilio</strong> para la comunicación por <strong>WhatsApp</strong> sin exponer los datos de clientes y técnicos.</li>
+                            <li>Desarrollo de módulos para la gestión de servicios, asignación de técnicos, presupuestos y evidencias fotográficas.</li>
+                            <li>Implementación de un <strong>sistema de cálculo automático de pagos</strong> según el rendimiento de los técnicos.</li>
+                            <li>Desarrollo del panel administrativo para la gestión de técnicos, servicios, pagos, garantías y reportes.</li>
+                            <li>Automatización de notificaciones y mensajes por <strong>WhatsApp</strong> para el seguimiento de servicios y recordatorios de pago.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=JdXTzbcqt74" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
+                            <i class="fab fa-youtube"></i> Demo
+                        </a>
+                    </div>
+
+                    <!-- PROYECTO INTEGRADOR UPB -->
+                    <div class="experience-item hover-glow">
+                        <h4 class="company">PROYECTO INTEGRADOR UPB</h4>
+                        <p class="position" data-es="Desarrollador Full Stack • Bucaramanga, Santander" data-en="Full Stack Developer • Bucaramanga, Santander">Desarrollador Full Stack • Bucaramanga, Santander</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Geolocalización</span>
+                            <span class="tech-tag">Mapas interactivos</span>
+                        </div>
+                        <ul class="description-list" data-es="<li>Desarrollo de un sistema de reportes de infraestructura y objetos perdidos para la Universidad Pontificia Bolivariana – Seccional Bucaramanga utilizando <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>MySQL</strong>.</li><li>Implementación de reportes con <strong>ubicación</strong>, fotografías y descripciones de incidencias.</li><li>Desarrollo de un <strong>mapa interactivo</strong> y muro público para la visualización y priorización de reportes.</li><li>Implementación del módulo de objetos perdidos con publicación de hallazgos y contacto entre usuarios.</li><li>Desarrollo de un sistema de notificaciones para informar sobre eventos, mantenimiento y novedades.</li><li>Creación de un panel administrativo para la gestión de reportes, seguimiento de incidencias y visualización de métricas.</li>" data-en="<li>Development of an infrastructure and lost objects reporting system for Universidad Pontificia Bolivariana – Bucaramanga Campus using <strong>Flutter</strong>, <strong>Node.js</strong> and <strong>MySQL</strong>.</li><li>Implementation of reports with <strong>location</strong>, photographs and incident descriptions.</li><li>Development of an <strong>interactive map</strong> and public wall for report visualization and prioritization.</li><li>Implementation of the lost objects module with findings publication and contact between users.</li><li>Development of a notification system to inform about events, maintenance and updates.</li><li>Creation of an administrative panel for report management, incident tracking and metrics visualization.</li>">
+                            <li>Desarrollo de un sistema de reportes de infraestructura y objetos perdidos para la Universidad Pontificia Bolivariana – Seccional Bucaramanga utilizando <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>MySQL</strong>.</li>
+                            <li>Implementación de reportes con <strong>ubicación</strong>, fotografías y descripciones de incidencias.</li>
+                            <li>Desarrollo de un <strong>mapa interactivo</strong> y muro público para la visualización y priorización de reportes.</li>
+                            <li>Implementación del módulo de objetos perdidos con publicación de hallazgos y contacto entre usuarios.</li>
+                            <li>Desarrollo de un sistema de notificaciones para informar sobre eventos, mantenimiento y novedades.</li>
+                            <li>Creación de un panel administrativo para la gestión de reportes, seguimiento de incidencias y visualización de métricas.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=kwDvKTRsOYI" class="project-link" target="_blank" data-es="Demo" data-en="Demo">
+                            <i class="fab fa-youtube"></i> Demo
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
